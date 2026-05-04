@@ -54,12 +54,12 @@ Semester: First Semester, 2025/2026
 Date: [Submission Date]
 ```
 
-[### Table of Content](docs.domcumentation.md#table-of-content) 
+### [Table of Content](docs.domcumentation.md#table-of-content) 
 
-[### **Abstract**](docs/documentation.md#abstract)
-[### **Acknowledgment**](docs/documentation.md#acknowledgment)
-[### **Business Intelligence Project Description and Objectives**](docs/documentation.md#business-intelligence-project-description-and-objectives)
-[### **Data Research and Acquiring Effort**](docs/documentation.md#data-research-and-acquiring-effort)
+- ###[**Abstract**](docs/documentation.md#abstract)\
+- ###[**Acknowledgment**](docs/documentation.md#acknowledgment)\
+### [**Business Intelligence Project Description and Objectives**](docs/documentation.md#business-intelligence-project-description-and-objectives)
+### [**Data Research and Acquiring Effort**](docs/documentation.md#data-research-and-acquiring-effort)
 [### **Data Description and Understanding**](docs/documentation.md#data-description-and-understanding)
 [### **Data Primary Cleaning and Transformation**](docs/documentation.md#data-primary-cleaning-and-transformation)
 [### **Data Visualization and Insights**](docs/documentation.md#data-visualization-and-insights)
