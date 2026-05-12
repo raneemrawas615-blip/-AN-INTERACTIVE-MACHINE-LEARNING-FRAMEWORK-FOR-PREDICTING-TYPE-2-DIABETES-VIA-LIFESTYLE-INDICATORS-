@@ -200,6 +200,7 @@ In addition, the following calculated fields were created to further enhance the
 
 --After all transformations and calculated fields were applied, the dataset used in Tableau currently contains 38 fields and 70,692 rows.
 
+----------------------------------------------------------------------------------
 
  Dashboard Classification Logic
  
@@ -231,9 +232,11 @@ This dashboard focuses on behavioral and lifestyle-related features that are dir
 
 •	Alcohol for Heavy Drinkers: Shows that heavy alcohol consumption is more common among non-diabetic individuals (2,188) compared to diabetic ones (832), which may reflect survivorship or behavioral differences.
 
+Key Finding: Physical inactivity, high BMI, and high blood pressure show the strongest association with diabetes — making lifestyle modification the most impactful prevention strategy.
+
 
 Dashboard 2 — Social & Demographic Patterns
- [View Dashboard  — Social & Demographic Patterns](images/dashboard2.png)
+ [View Dashboard2  — Social & Demographic Patterns](images/dashboard2.png)
 
 This dashboard focuses on socioeconomic and demographic features that reflect the broader social context in which individuals live. Features included: Age, Gender, Education, Healthcare Access, Income, and whether the individual avoided a doctor due to cost.
 
@@ -246,8 +249,11 @@ This dashboard focuses on socioeconomic and demographic features that reflect th
 
 •	Not Going to a Doctor Because of Cost: The majority of individuals in both groups could afford care, but those who could not afford care show a disproportionately higher count of diabetic cases, reinforcing the impact of financial barriers on health outcomes.
 
+Key Finding: Diabetes risk increases consistently with age and decreases with income and education level — highlighting the role of socioeconomic factors in diabetes prevention and access to care.
+
+
 Dashboard 3 — Health Complications & General Health
- [View Dashboard  — Health Complications & General Health](images/dashboard3.png)
+ [View Dashboard3 — Health Complications & General Health](images/dashboard3.png)
  
 
 This dashboard focuses on existing health conditions and overall physical and mental wellbeing. Features included: Physical Health, General Health, Heart Disease, Mental Health, Stroke, and Difficulty Walking.
@@ -263,58 +269,23 @@ This dashboard focuses on existing health conditions and overall physical and me
 
 •	Difficult Walk: Diabetic individuals report significantly greater difficulty walking compared to non-diabetic individuals, aligning with known complications such as peripheral neuropathy and reduced mobility.
 
+Key Finding: Self-rated general health is one of the strongest indicators of diabetes status — diabetic individuals overwhelmingly report fair or poor health, reflecting the significant physical and psychological burden of the disease.
+
+**Note:_ Some patterns across the three dashboards may appear counterintuitive — such as heavy alcohol consumption being more common among non-diabetic individuals, or certain lifestyle features showing weaker associations than expected. This reflects the silent nature of Type 2 diabetes: many individuals remain undiagnosed for years, meaning their data is recorded as non-diabetic when they may not be. This partially explains the model's accuracy level, which will be discussed in detail in the Advanced Analytics & AI Modeling section_.**_
 
 
 
-
-
-
-## [**Data Description and Understanding**](docs/documentation.md#data-description-and-understanding)
-- **Data Dictionary**: Describe every field you're using and why it matters
-- **Exploratory Data Analysis (EDA)**:
-  - Charts and graphs showing data distribution
-  - Patterns discovered
-  - Correlations and relationships found
-  - Insights relevant to your project objectives
 
   ----------------------------------------------------------------------------------
 
 
-## [**Data Primary Cleaning and Transformation**](docs/documentation.md#data-primary-cleaning-and-transformation)
-Describe all data preparation steps in sequence:
-- Data type conversions
-- Handling missing values
-- Merging datasets
-- Aggregation and appending
-- Any other transformations applied
+
 ----------------------------------------------------------------------------------
 
-## [**Data Visualization and Insights**](docs/documentation.md#data-visualization-and-insights)
-- Include relevant charts and describe each one
-- Explain the significance of each visualization
-- Highlight key insights from your charts
-- What patterns do these visualizations reveal?
+
 ----------------------------------------------------------------------------------
 
-## [**Dashboard Design & Business Insights**](docs/documentation.md#dashboard-design--business-insights)
-- Showcase your final BI Dashboard
-- Organize by **Business Questions Answered**
 
-For each chart/component:
-```
-Chart [#]: [Title]
-Description: [What does this chart show?]
-Insight Derived: [What does this tell the business? Why is this important?]
-```
-
-Examples:
-- Chart 1: Sales Trend Analysis – Shows growth pattern
-
-![An example of a chart.](images/image-rendered.webp)
-> The chart shows a cat
-
-- Chart 2: Customer Segmentation – Identifies high-value segments
-- Chart 3: Regional Performance – Highlights top/bottom performers
 ----------------------------------------------------------------------------------
 
 ## [**Advanced Analytics and AI Modeling**](docs/documentation.md#advanced-analytics-and-ai-modeling)
