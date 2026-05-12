@@ -72,6 +72,8 @@ Limited access to early diabetes screening in Jordan
 Most individuals remain unaware of their risk until complications develop
 Financial barriers ,most screening requires paid clinical visits
 
+[Click here to learn more about Type 2 Diabetes](docs/DIABETES_GUIDE)
+
 ----------------------------------------------------------------------------------
 **Data Research and Acquiring Effort**
 
