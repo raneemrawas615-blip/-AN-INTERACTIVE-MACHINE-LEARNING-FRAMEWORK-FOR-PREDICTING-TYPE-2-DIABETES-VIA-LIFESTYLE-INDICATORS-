@@ -210,6 +210,62 @@ All three dashboards were set to a fixed size of 1600 × 750 pixels to ensure a 
  Business Value of the Dashboards
 From a business and public health perspective, these dashboards provide decision-makers, healthcare providers, and researchers with a clear visual understanding of how diabetes relates to lifestyle choices, socioeconomic conditions, and existing health complications. They can help identify high-risk population segments, support the design of targeted prevention campaigns, and guide resource allocation in healthcare systems. The interactive nature of the dashboards allows users to filter and explore the data dynamically, making them a practical tool for ongoing analysis.
 
+Dashboard 1 — Lifestyle Factors
+ [View Dashboard 1 — Lifestyle Factors](../images/dashboard1.png)
+
+This dashboard focuses on behavioral and lifestyle-related features that are directly linked to an individual's daily habits and modifiable physical characteristics. Features included: BMI, Physical Activity, Smoker, Fruits & Vegetables consumption, High Blood Pressure, High Cholesterol, and Heavy Alcohol Consumption.
+
+•	BMI Distribution: Diabetic cases are most concentrated in the Overweight and Class I Obesity categories, confirming the strong link between excess weight and diabetes risk. Non-diabetic individuals are more spread across normal and lower BMI ranges.
+
+•	Physical Activity: Inactive individuals show significantly higher diabetes counts (13,059) compared to inactive non-diabetic individuals (7,934), while active individuals show the opposite pattern, highlighting physical inactivity as a key risk factor.
+
+•	Smoker: Smokers have a higher diabetic count (18,317) compared to non-smokers with diabetes (17,029), suggesting a moderate association between smoking and diabetes.
+•	Healthy Diet (Fruits & Veggies): Individuals who consume neither fruits nor vegetables show higher diabetes counts. Those consuming both show better outcomes, though diet alone does not determine diabetes status.
+•	High BP: Blood pressure cases rise steadily with age for diabetic individuals, peaking between ages 60-69, while non-diabetic individuals show a flatter trend across age groups.
+
+•	High Cholesterol: High cholesterol is more prevalent among diabetic individuals, with a notably larger proportion of diabetic cases in the high cholesterol category compared to normal cholesterol.
+
+•	Diabetes Cases: Confirms the balanced 50-50 split of the dataset with 35,346 records in each class.
+
+•	Smoker Rate: Provides a quick visual of smoker vs non-smoker distribution across both diabetic and non-diabetic groups.
+
+•	Alcohol for Heavy Drinkers: Shows that heavy alcohol consumption is more common among non-diabetic individuals (2,188) compared to diabetic ones (832), which may reflect survivorship or behavioral differences.
+
+
+Dashboard 2 — Social & Demographic Patterns
+ [View Dashboard  — Social & Demographic Patterns](../images/dashboard2.png)
+
+This dashboard focuses on socioeconomic and demographic features that reflect the broader social context in which individuals live. Features included: Age, Gender, Education, Healthcare Access, Income, and whether the individual avoided a doctor due to cost.
+
+•	Age & Gender: Diabetes cases increase consistently with age for both males and females, peaking in the 60-69 age group. Both genders follow a similar trend, with diabetic cases (purple) growing more steeply than non-diabetic cases (teal) in older age groups.
+
+•	Education: An inverse relationship exists between education level and diabetes prevalence. Individuals with lower education levels show higher diabetic proportions, while college graduates show a more balanced distribution, suggesting education is associated with better health awareness.
+
+•	Healthcare Access: The majority of respondents across both groups have healthcare coverage. However, a small but notable proportion of diabetic individuals lack access, which may contribute to delayed diagnosis.
+•	Income vs Diabetes: Diabetic cases consistently outnumber non-diabetic cases at every income level below $75K. At the highest income bracket (above $75K), non-diabetic individuals significantly outnumber diabetic ones (13,451 vs 7,195), clearly illustrating the role of economic status in diabetes risk.
+
+•	Not Going to a Doctor Because of Cost: The majority of individuals in both groups could afford care, but those who could not afford care show a disproportionately higher count of diabetic cases, reinforcing the impact of financial barriers on health outcomes.
+
+Dashboard 3 — Health Complications & General Health
+ [View Dashboard  — Health Complications & General Health](../images/dashboard3.png)
+ 
+
+This dashboard focuses on existing health conditions and overall physical and mental wellbeing. Features included: Physical Health, General Health, Heart Disease, Mental Health, Stroke, and Difficulty Walking.
+
+•	Physical Health: Diabetic individuals are heavily concentrated in the 21-30 days of poor physical health category, while non-diabetic individuals are predominantly clustered at zero poor health days, clearly reflecting the physical burden of diabetes.
+•	General Health (GenHlth): Diabetic individuals overwhelmingly report Fair or Poor general health, while non-diabetic individuals predominantly report Very Good or Good health, making self-reported general health one of the strongest visual indicators of diabetes status in the dataset.
+
+•	Heart Disease: Heart disease is more prevalent among diabetic individuals, with a visibly larger proportion of the diabetic bar occupied by heart disease cases compared to the non-diabetic group.
+
+•	Mental Health: Diabetic individuals report higher frequencies of poor mental health days, with elevated counts maintained across a wider range of days compared to non-diabetic individuals, reflecting the psychological burden of living with a chronic condition.
+
+•	Stroke: While stroke is relatively rare in both groups, it occurs at a higher rate among diabetic individuals, consistent with known cardiovascular complications of diabetes.
+
+•	Difficult Walk: Diabetic individuals report significantly greater difficulty walking compared to non-diabetic individuals, aligning with known complications such as peripheral neuropathy and reduced mobility.
+
+
+
+
 
 
 
