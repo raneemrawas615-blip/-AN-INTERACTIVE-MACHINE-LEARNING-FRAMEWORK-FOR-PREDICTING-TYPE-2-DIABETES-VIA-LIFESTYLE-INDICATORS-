@@ -139,36 +139,67 @@ The dataset used for the dashboards is the CDC BRFSS 2015 balanced dataset, spec
 Before building the dashboards, several modifications were made to improve readability and make the visualizations meaningful to a general audience. All binary features that were originally stored as 0 and 1 were replaced with descriptive text labels. The following features were manually relabeled:
 
 •	Diabetes Binary: 0 → Non-Diabetic, 1 → Diabetes
+
 •	High BP: 0 → Normal BP, 1 → High BP
+
 •	High Chol: 0 → Normal Cholesterol, 1 → High Cholesterol
+
 •	Stroke: 0 → No Stroke, 1 → Had Stroke
+
 •	Phys Activity: 0 → Not Active, 1 → Active
+
 •	Chol Check: 0 → Not Checked, 1 → Checked
+
 •	Fruits: 0 → No Fruits, 1 → Fruits
+
 •	Veggies: 0 → No Veggies, 1 → Veggies
+
 •	Diff Walk: 0 → Easy Walk, 1 → Diff Walk
+
 •	Any Healthcare: 0 → No Healthcare, 1 → Got Healthcare
+
 •	No Docbc Cost: 0 → Could Afford Care, 1 → Could Not Afford Care
+
 •	Sex: 0 → Female, 1 → Male
+
 •	Gen Hlth: 1 → Excellent, 2 → Very Good, 3 → Good, 4 → Fair, 5 → Poor
+
 In addition, the following calculated fields were created to further enhance the data:
+
 •  BMI BINS: Grouped raw BMI values into WHO standard categories — Underweight, Normal Weight, Overweight/Pre-Obese, Class I Obesity, Class II Obesity, and Class III Obesity. 
+
 •  Education Labels: Converted education levels from numeric codes to descriptive labels — Never Attended School, Grades 1-8 (Elementary), Grades 9-11 (Some High School), Grade 12, Some College, and College Graduate. 
+
 •  Heart Disease Label: Converted HeartDiseaseorAttack from 0/1 to No Heart Disease / Heart Disease. 
+
 •  High Chol Label: Converted High Chol from 0/1 to Normal Cholesterol / High Cholesterol. 
+
 •  Hvy Alcohol Cons Label: Converted heavy alcohol consumption from 0/1 to Non-Heavy Drinker / Heavy Drinker. 
+
 •  Income Label: Converted income from numeric codes to dollar range labels — Less than $10K, $10K-$15K, $15K-$20K, $20K-$25K, $25K-$35K, $35K-$50K, $50K-$75K, and More than $75K. 
+
 •  Phys Activity Label: Converted physical activity from 0/1 to Not Active / Active. 
+
 •  Smoker Label: Converted smoker status from 0/1 to Non-Smoker / Smoker. 
+
 •  Stroke Label: Converted stroke from 0/1 to No Stroke / Had Stroke. 
+
 •  Age Label: Converted age codes 1-13 to actual age ranges — 18-24, 25-29, 30-34, 35-39, 40-44, 45-49, 50-54, 55-59, 60-64, 65-69, 70-74, 75-79, and 80+. 
+
 •  Phys Hlth Label: Grouped days of poor physical health into four categories — No Poor Health Days, 1-10 Days, 11-20 Days, and 21-30 Days. 
+
 •  Ment Hlth Label: Grouped days of poor mental health into four categories — No Poor Mental Health Days, 1-10 Days, 11-20 Days, and 21-30 Days. 
+
 •  GenHlth Label: Converted general health numeric scores to Excellent, Very Good, Good, Fair, and Poor. 
+
 •  Diabetes Rate: A calculated measure showing the rate of diabetes across different segments. 
+
 •  Diabetic Cases: A calculated measure counting the total number of diabetic records. 
+
 •  Number of Records: A calculated measure counting total records per segment.
+
 --After all transformations and calculated fields were applied, the dataset used in Tableau currently contains 38 fields and 70,692 rows.
+
 
  Dashboard Classification Logic
  
