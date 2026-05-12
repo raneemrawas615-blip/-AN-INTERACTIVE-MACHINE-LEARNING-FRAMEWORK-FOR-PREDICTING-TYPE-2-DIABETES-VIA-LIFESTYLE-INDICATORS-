@@ -70,7 +70,7 @@ What specific business problems are you solving?
 
 Limited access to early diabetes screening in Jordan
 Most individuals remain unaware of their risk until complications develop
-Financial barriers — most screening requires paid clinical visits
+Financial barriers ,most screening requires paid clinical visits
 
 ----------------------------------------------------------------------------------
 **Data Research and Acquiring Effort**
@@ -81,7 +81,7 @@ Two types of data were needed for this project. The first is a large-scale label
 
 How did you acquire it?
 
-1.CDC BRFSS Dataset — downloaded directly from Kaggle as a public CSV file. No API or scraping was needed.The specific file used is diabetes_binary_5050split_health_indicators_BRFSS2015.csv — 70,692 records with a balanced 50/50 split between diabetic and non-diabetic cases across 21 lifestyle, behavioral, and demographic features.
+1.CDC BRFSS Dataset — downloaded directly from Kaggle as a public CSV file. No API or scraping was needed.The specific file used is diabetes_binary_5050split_health_indicators_BRFSS2015.csv , 70,692 records with a balanced 50/50 split between diabetic and non-diabetic cases across 21 lifestyle, behavioral, and demographic features.
 
 📄 [View dataset on Kaggle](https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset/data?select=diabetes_binary_5050split_health_indicators_BRFSS2015.csv)
 
