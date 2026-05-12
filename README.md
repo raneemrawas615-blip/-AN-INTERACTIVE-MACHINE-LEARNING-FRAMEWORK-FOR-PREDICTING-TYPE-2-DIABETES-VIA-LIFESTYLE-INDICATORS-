@@ -211,7 +211,7 @@ All three dashboards were set to a fixed size of 1600 × 750 pixels to ensure a 
 From a business and public health perspective, these dashboards provide decision-makers, healthcare providers, and researchers with a clear visual understanding of how diabetes relates to lifestyle choices, socioeconomic conditions, and existing health complications. They can help identify high-risk population segments, support the design of targeted prevention campaigns, and guide resource allocation in healthcare systems. The interactive nature of the dashboards allows users to filter and explore the data dynamically, making them a practical tool for ongoing analysis.
 
 Dashboard 1 — Lifestyle Factors
- [View Dashboard 1 — Lifestyle Factors](../images/dashboard1.png)
+ [View Dashboard 1 — Lifestyle Factors](images/dashboard1.png)
 
 This dashboard focuses on behavioral and lifestyle-related features that are directly linked to an individual's daily habits and modifiable physical characteristics. Features included: BMI, Physical Activity, Smoker, Fruits & Vegetables consumption, High Blood Pressure, High Cholesterol, and Heavy Alcohol Consumption.
 
@@ -233,7 +233,7 @@ This dashboard focuses on behavioral and lifestyle-related features that are dir
 
 
 Dashboard 2 — Social & Demographic Patterns
- [View Dashboard  — Social & Demographic Patterns](../images/dashboard2.png)
+ [View Dashboard  — Social & Demographic Patterns](images/dashboard2.png)
 
 This dashboard focuses on socioeconomic and demographic features that reflect the broader social context in which individuals live. Features included: Age, Gender, Education, Healthcare Access, Income, and whether the individual avoided a doctor due to cost.
 
@@ -247,7 +247,7 @@ This dashboard focuses on socioeconomic and demographic features that reflect th
 •	Not Going to a Doctor Because of Cost: The majority of individuals in both groups could afford care, but those who could not afford care show a disproportionately higher count of diabetic cases, reinforcing the impact of financial barriers on health outcomes.
 
 Dashboard 3 — Health Complications & General Health
- [View Dashboard  — Health Complications & General Health](../images/dashboard3.png)
+ [View Dashboard  — Health Complications & General Health](images/dashboard3.png)
  
 
 This dashboard focuses on existing health conditions and overall physical and mental wellbeing. Features included: Physical Health, General Health, Heart Disease, Mental Health, Stroke, and Difficulty Walking.
