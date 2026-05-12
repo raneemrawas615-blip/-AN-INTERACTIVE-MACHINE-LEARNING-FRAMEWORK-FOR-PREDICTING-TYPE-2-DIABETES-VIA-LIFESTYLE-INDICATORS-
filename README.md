@@ -1,13 +1,17 @@
 
 **University of Petra, Graduation Projects, Business Intelligence, 20252**
-
+**
 AN INTERACTIVE MACHINE LEARNING FRAMEWORK FOR PREDICTING 
-TYPE 2 DIABETES VIA LIFESTYLE INDICATORS
-
+TYPE 2 DIABETES VIA LIFESTYLE INDICATORS**
+**
 Raneem Rawwas — 202111039
+
 Supervised by: Dr. Ayman Mansour
+
 Course: 307498 – Graduation Project
-Second Semester 2025/2026
+
+Second Semester 2025/2026**
+
 ----------------------------------------------------------------------------------
 
 ## [Table of Content](docs.domcumentation.md#table-of-content) 
