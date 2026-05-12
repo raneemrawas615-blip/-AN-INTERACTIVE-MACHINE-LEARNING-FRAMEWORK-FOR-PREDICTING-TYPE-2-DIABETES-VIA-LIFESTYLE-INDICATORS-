@@ -96,29 +96,33 @@ CDC BRFSS 2015 Dataset
 The dataset used is the diabetes_binary_5050split_health_indicators_BRFSS2015.csv file, publicly available on Kaggle. It contains 70,692 records with a perfectly balanced 50/50 split between diabetic and non-diabetic cases across 21 features covering lifestyle behaviors, chronic conditions, and demographic information. The dataset contains no missing values.
 
 Data Dictionary
+| Variable Name | Role | Type | Description | Missing Values |
+|---|---|---|---|---|
+| ID | ID | Integer | Patient ID | No |
+| Diabetes_binary | Target | Binary | 0 = no diabetes, 1 = prediabetes or diabetes | No |
+| HighBP | Feature | Binary | 0 = no high BP, 1 = high BP | No |
+| HighChol | Feature | Binary | 0 = no high cholesterol, 1 = high cholesterol | No |
+| CholCheck | Feature | Binary | 0 = no cholesterol check in 5 years, 1 = yes | No |
+| BMI | Feature | Integer | Body Mass Index | No |
+| Smoker | Feature | Binary | Smoked at least 100 cigarettes in lifetime. 0 = no, 1 = yes | No |
+| Stroke | Feature | Binary | Ever told you had a stroke. 0 = no, 1 = yes | No |
+| HeartDiseaseorAttack | Feature | Binary | Coronary heart disease or myocardial infarction. 0 = no, 1 = yes | No |
+| PhysActivity | Feature | Binary | Physical activity in past 30 days. 0 = no, 1 = yes | No |
+| Fruits | Feature | Binary | Consume fruit 1 or more times per day. 0 = no, 1 = yes | No |
+| Veggies | Feature | Binary | Consume vegetables 1 or more times per day. 0 = no, 1 = yes | No |
+| HvyAlcoholConsump | Feature | Binary | Heavy drinker (men >14/week, women >7/week). 0 = no, 1 = yes | No |
+| AnyHealthcare | Feature | Binary | Has any health care coverage. 0 = no, 1 = yes | No |
+| NoDocbcCost | Feature | Binary | Needed a doctor but couldn't afford it. 0 = no, 1 = yes | No |
+| GenHlth | Feature | Integer | Self-rated general health. Scale 1–5 (1=excellent, 5=poor) | No |
+| MentHlth | Feature | Integer | Days mental health was not good in past 30 days. Scale 0–30 | No |
+| PhysHlth | Feature | Integer | Days physical health was not good in past 30 days. Scale 0–30 | No |
+| DiffWalk | Feature | Binary | Serious difficulty walking or climbing stairs. 0 = no, 1 = yes | No |
+| Sex | Feature | Binary | 0 = female, 1 = male | No |
+| Age | Feature | Integer | 13-level age category. 1 = 18–24, 13 = 80+ | No |
+| Education | Feature | Integer | Education level. Scale 1–6 (1=never attended, 6=college graduate) | No |
+| Income | Feature | Integer | Income scale. Scale 1–8 (1=less than $10,000, 8=$75,000+) | No |
 
-Variable NameRoleTypeDescriptionMissing ValuesIDIDIntegerPatient IDNoDiabetes_binaryTargetBinary0 = no diabetes, 1 = prediabetes or diabetesNoHighBPFeatureBinary0 = no high BP, 1 = high BPNoHighCholFeatureBinary0 = no high cholesterol, 1 = high cholesterolNoCholCheckFeatureBinary0 = no cholesterol check in 5 years, 1 = yesNoBMIFeatureIntegerBody Mass IndexNoSmokerFeatureBinarySmoked at least 100 cigarettes in lifetime. 0 = no, 1 = yesNoStrokeFeatureBinaryEver told you had a stroke. 0 = no, 1 = yesNoHeartDiseaseorAttackFeatureBinaryCoronary heart disease or myocardial infarction. 0 = no, 1 = yesNoPhysActivityFeatureBinaryPhysical activity in past 30 days (not including job). 0 = no, 1 = yesNoFruitsFeatureBinaryConsume fruit 1 or more times per day. 0 = no, 1 = yesNoVeggiesFeatureBinaryConsume vegetables 1 or more times per day. 0 = no, 1 = yesNoHvyAlcoholConsumpFeatureBinaryHeavy drinker (men >14 drinks/week, women >7 drinks/week). 0 = no, 1 = yesNoAnyHealthcareFeatureBinaryHas any health care coverage. 0 = no, 1 = yesNoNoDocbcCostFeatureBinaryNeeded a doctor but couldn't afford it in past 12 months. 0 = no, 1 = yesNoGenHlthFeatureIntegerSelf-rated general health. Scale 1–5 (1 = excellent, 5 = poor)NoMentHlthFeatureIntegerDays mental health was not good in past 30 days. Scale 0–30NoPhysHlthFeatureIntegerDays physical health was not good in past 30 days. Scale 0–30NoDiffWalkFeatureBinarySerious difficulty walking or climbing stairs. 0 = no, 1 = yesNoSexFeatureBinary0 = female, 1 = maleNoAgeFeatureInteger13-level age category. 1 = 18–24, 13 = 80+NoEducationFeatureIntegerEducation level. Scale 1–6 (1 = never attended school, 6 = college graduate)NoIncomeFeatureIntegerIncome scale. Scale 1–8 (1 = less than $10,000, 8 = $75,000 or more)No
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  ----------------------------------------------------------------------------------
 
 
 ## [**Data Description and Understanding**](docs/documentation.md#data-description-and-understanding)
