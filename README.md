@@ -271,7 +271,7 @@ This dashboard focuses on existing health conditions and overall physical and me
 
 Key Finding: Self-rated general health is one of the strongest indicators of diabetes status — diabetic individuals overwhelmingly report fair or poor health, reflecting the significant physical and psychological burden of the disease.
 
-**Note:_ Some patterns across the three dashboards may appear counterintuitive — such as heavy alcohol consumption being more common among non-diabetic individuals, or certain lifestyle features showing weaker associations than expected. This reflects the silent nature of Type 2 diabetes: many individuals remain undiagnosed for years, meaning their data is recorded as non-diabetic when they may not be. This partially explains the model's accuracy level, which will be discussed in detail in the Advanced Analytics & AI Modeling section_.**_
+**Note:_Some patterns across the three dashboards may appear counterintuitive — such as heavy alcohol consumption being more common among non-diabetic individuals, or certain lifestyle features showing weaker associations than expected. This reflects the silent nature of Type 2 diabetes: many individuals remain undiagnosed for years, meaning their data is recorded as non-diabetic when they may not be. This partially explains the model's accuracy level, which will be discussed in detail in the Advanced Analytics & AI Modeling section_.**
 
 
 
