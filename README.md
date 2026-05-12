@@ -205,6 +205,12 @@ In addition, the following calculated fields were created to further enhance the
  
 The 21 features were distributed across three dashboards based on the nature and theme of each feature group. Lifestyle and behavioral features that reflect daily habits and modifiable physical indicators were grouped in the first dashboard. Social, demographic, and economic features that reflect the broader life context of individuals were grouped in the second dashboard. Features related to existing health conditions, overall health status, and physical or mental wellbeing were grouped in the third dashboard. This classification ensures that each dashboard tells a coherent and focused story.
 
+All three dashboards were set to a fixed size of 1600 × 750 pixels to ensure a consistent and unified viewing experience across all views.
+
+ Business Value of the Dashboards
+From a business and public health perspective, these dashboards provide decision-makers, healthcare providers, and researchers with a clear visual understanding of how diabetes relates to lifestyle choices, socioeconomic conditions, and existing health complications. They can help identify high-risk population segments, support the design of targeted prevention campaigns, and guide resource allocation in healthcare systems. The interactive nature of the dashboards allows users to filter and explore the data dynamically, making them a practical tool for ongoing analysis.
+
+
 
 
 ## [**Data Description and Understanding**](docs/documentation.md#data-description-and-understanding)
