@@ -28,8 +28,7 @@ Second Semester 2025/2026
 ----------------------------------------------------------------------------------
 
 
-Abstract :
-
+**Abstract :**
 
 Type 2 diabetes is one of the most prevalent chronic diseases worldwide, and early identification of at-risk individuals is critical for timely intervention and prevention. This project presents an interactive machine learning framework designed to predict the probability of Type 2 diabetes based on lifestyle and health indicators.
 The project utilized two data sources: the CDC BRFSS 2015 dataset (70,692 records, 50/50 balanced split, 21 features), and real laboratory data provided by Smart Lab Laboratories under a formal data agreement. Dietary recommendation data was sourced from NutriPlus Nutritional Center under the supervision of Dr. Islam JadAlla.
@@ -37,7 +36,7 @@ Two models were developed. The first is a predictive model trained on the CDC da
 The project includes three interactive Tableau dashboards and a bilingual Arabic-English Streamlit interface featuring an intelligent prediction section and a diabetes awareness guide. A clear disclaimer is displayed stating the tool is for awareness purposes only and does not replace medical diagnosis. The model's outputs were reviewed and validated by Dr. Ahmad Jadallah from the University of Petra. A formal validation document is included in the documentation section of this repository.
 
 ----------------------------------------------------------------------------------
-Acknowledgments :
+**Acknowledgments :**
 
 
 First and foremost, I would like to express my sincere gratitude to my supervisor, Dr. Ayman Mansour, for his continuous guidance, valuable feedback, and support throughout every stage of this project.
@@ -48,8 +47,7 @@ I am also grateful to the CDC for making the BRFSS dataset publicly available.
 Finally, I would like to thank my family and friends for their patience, support, and encouragement throughout this journey.
 
 ----------------------------------------------------------------------------------
-Business Intelligence Project Description and Objectives
-
+**Business Intelligence Project Description and Objectives**
 What is this project about?
 
 RiskSense is a bilingual interactive machine learning framework designed to predict the probability of Type 2 diabetes based on lifestyle and health indicators. The project was motivated by Jordan's position as one of the most affected countries in the MENA region, and by the silent nature of Type 2 diabetes — a disease that can progress for years without symptoms, making early detection critical. Many individuals remain undiagnosed until serious complications arise, and in some cases, the disease is only discovered after a life-threatening event.
@@ -69,24 +67,24 @@ What specific business problems are you solving?
 Limited access to early diabetes screening in Jordan
 Most individuals remain unaware of their risk until complications develop
 Financial barriers — most screening requires paid clinical visits
+
 ----------------------------------------------------------------------------------
-Data Research and Acquiring Effort
+**Data Research and Acquiring Effort**
+
 What data did you search for and why?
+
 Two types of data were needed for this project. The first is a large-scale labeled dataset linking lifestyle and health indicators to diabetes status — needed to train the predictive machine learning model. The second is real clinical laboratory data from Jordanian patients — needed to ground the project in local medical reality and build the rule-based logic behind the user interface recommendations.
+
 How did you acquire it?
 
-CDC BRFSS Dataset — downloaded directly from Kaggle as a public CSV file. No API or scraping was needed.
-Smart Lab Laboratory Data — obtained under a formal Non-Disclosure Agreement (NDA) with Smart Lab Laboratories, Amman, Jordan. The data was provided as Excel and CSV files covering 11 laboratory tests across thousands of patients.
+1.CDC BRFSS Dataset — downloaded directly from Kaggle as a public CSV file. No API or scraping was needed.The specific file used is diabetes_binary_5050split_health_indicators_BRFSS2015.csv — 70,692 records with a balanced 50/50 split between diabetic and non-diabetic cases across 21 lifestyle, behavioral, and demographic features.
 
-Data Sources
-DatasetSourceAccessCDC BRFSS 2015 — Diabetes Health IndicatorsKagglePublicReal Laboratory Data — Smart Lab JordanSmart Lab Laboratories, AmmanNDA — formal agreement on file
-Brief Description of Each Data Source
-1. CDC BRFSS 2015 Dataset
-A large-scale public health survey conducted by the Centers for Disease Control and Prevention (CDC). The specific file used is diabetes_binary_5050split_health_indicators_BRFSS2015.csv — 70,692 records with a balanced 50/50 split between diabetic and non-diabetic cases across 21 lifestyle, behavioral, and demographic features.
-📄 View raw data file
+📄 [View dataset on Kaggle](https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset/data?select=diabetes_binary_5050split_health_indicators_BRFSS2015.csv)
+
 2. Smart Lab Laboratory Data
 Real clinical laboratory results from Jordanian patients collected during 2025, covering 11 lab tests including HbA1c (used as the diabetes target variable), CRP, Triglycerides, GGT, Creatinine, and others. Provided under a formal NDA — documentation available in the repository.
-📄 View NDA & documentation
+
+📄 [View NDA](../docs/smart_lab_NDA.pdf)
 ----------------------------------------------------------------------------------
 
 ## [**Data Description and Understanding**](docs/documentation.md#data-description-and-understanding)
