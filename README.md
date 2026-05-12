@@ -123,6 +123,57 @@ Data Dictionary
 | Income | Feature | Integer | Income scale. Scale 1–8 (1=less than $10,000, 8=$75,000+) | No |
 
   ----------------------------------------------------------------------------------
+**Tableau Dashboards**
+
+Why choosing  Tableau
+
+Tableau was selected as the visualization tool for this project due to its powerful ability to handle large datasets and create interactive, visually rich dashboards without requiring programming knowledge. Its drag-and-drop interface allows for rapid exploration of data patterns, and its support for calculated fields and data transformation made it possible to enhance and relabel the dataset directly within the tool. Tableau is widely used in business intelligence environments, making it a relevant and industry-standard choice for this type of analytical work.
+
+Design Choices
+
+A unified dark purple theme was applied across all three dashboards to maintain visual consistency throughout the project. A two-color system was used across all charts to represent binary values: purple was used to represent the positive case or the value 1, and teal was used to represent the negative case or the value 0. This means that for the diabetes variable, purple represents diabetic cases and teal represents non-diabetic cases, and the same logic applies consistently to all other binary features across the dashboards — for example, purple represents smokers, those with high blood pressure, or those with heart disease, while teal represents the opposite. This consistent color mapping makes it intuitive for the viewer to interpret any chart in the dashboard without needing additional explanation. The same design language was also carried into the machine learning interface, creating a cohesive visual identity for the entire project.
+
+ Dataset & Feature Preparation
+ 
+The dataset used for the dashboards is the CDC BRFSS 2015 balanced dataset, specifically the diabetes_binary_5050split_health_indicators_BRFSS2015.csv file, which contains 70,692 records with a 50-50 split between diabetic and non-diabetic cases across 21 features.
+Before building the dashboards, several modifications were made to improve readability and make the visualizations meaningful to a general audience. All binary features that were originally stored as 0 and 1 were replaced with descriptive text labels. The following features were manually relabeled:
+
+•	Diabetes Binary: 0 → Non-Diabetic, 1 → Diabetes
+•	High BP: 0 → Normal BP, 1 → High BP
+•	High Chol: 0 → Normal Cholesterol, 1 → High Cholesterol
+•	Stroke: 0 → No Stroke, 1 → Had Stroke
+•	Phys Activity: 0 → Not Active, 1 → Active
+•	Chol Check: 0 → Not Checked, 1 → Checked
+•	Fruits: 0 → No Fruits, 1 → Fruits
+•	Veggies: 0 → No Veggies, 1 → Veggies
+•	Diff Walk: 0 → Easy Walk, 1 → Diff Walk
+•	Any Healthcare: 0 → No Healthcare, 1 → Got Healthcare
+•	No Docbc Cost: 0 → Could Afford Care, 1 → Could Not Afford Care
+•	Sex: 0 → Female, 1 → Male
+•	Gen Hlth: 1 → Excellent, 2 → Very Good, 3 → Good, 4 → Fair, 5 → Poor
+In addition, the following calculated fields were created to further enhance the data:
+•  BMI BINS: Grouped raw BMI values into WHO standard categories — Underweight, Normal Weight, Overweight/Pre-Obese, Class I Obesity, Class II Obesity, and Class III Obesity. 
+•  Education Labels: Converted education levels from numeric codes to descriptive labels — Never Attended School, Grades 1-8 (Elementary), Grades 9-11 (Some High School), Grade 12, Some College, and College Graduate. 
+•  Heart Disease Label: Converted HeartDiseaseorAttack from 0/1 to No Heart Disease / Heart Disease. 
+•  High Chol Label: Converted High Chol from 0/1 to Normal Cholesterol / High Cholesterol. 
+•  Hvy Alcohol Cons Label: Converted heavy alcohol consumption from 0/1 to Non-Heavy Drinker / Heavy Drinker. 
+•  Income Label: Converted income from numeric codes to dollar range labels — Less than $10K, $10K-$15K, $15K-$20K, $20K-$25K, $25K-$35K, $35K-$50K, $50K-$75K, and More than $75K. 
+•  Phys Activity Label: Converted physical activity from 0/1 to Not Active / Active. 
+•  Smoker Label: Converted smoker status from 0/1 to Non-Smoker / Smoker. 
+•  Stroke Label: Converted stroke from 0/1 to No Stroke / Had Stroke. 
+•  Age Label: Converted age codes 1-13 to actual age ranges — 18-24, 25-29, 30-34, 35-39, 40-44, 45-49, 50-54, 55-59, 60-64, 65-69, 70-74, 75-79, and 80+. 
+•  Phys Hlth Label: Grouped days of poor physical health into four categories — No Poor Health Days, 1-10 Days, 11-20 Days, and 21-30 Days. 
+•  Ment Hlth Label: Grouped days of poor mental health into four categories — No Poor Mental Health Days, 1-10 Days, 11-20 Days, and 21-30 Days. 
+•  GenHlth Label: Converted general health numeric scores to Excellent, Very Good, Good, Fair, and Poor. 
+•  Diabetes Rate: A calculated measure showing the rate of diabetes across different segments. 
+•  Diabetic Cases: A calculated measure counting the total number of diabetic records. 
+•  Number of Records: A calculated measure counting total records per segment.
+--After all transformations and calculated fields were applied, the dataset used in Tableau currently contains 38 fields and 70,692 rows.
+
+ Dashboard Classification Logic
+ 
+The 21 features were distributed across three dashboards based on the nature and theme of each feature group. Lifestyle and behavioral features that reflect daily habits and modifiable physical indicators were grouped in the first dashboard. Social, demographic, and economic features that reflect the broader life context of individuals were grouped in the second dashboard. Features related to existing health conditions, overall health status, and physical or mental wellbeing were grouped in the third dashboard. This classification ensures that each dashboard tells a coherent and focused story.
+
 
 
 ## [**Data Description and Understanding**](docs/documentation.md#data-description-and-understanding)
