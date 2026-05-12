@@ -1,61 +1,14 @@
-https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset?select=diabetes_binary_5050split_health_indicators_BRFSS2015.csv# Business Intelligence Graduation Project Template
 
 **University of Petra, Graduation Projects, Business Intelligence, 20252**
 
----
+AN INTERACTIVE MACHINE LEARNING FRAMEWORK FOR PREDICTING 
+TYPE 2 DIABETES VIA LIFESTYLE INDICATORS
 
-## How to Use This Template
-
-This repository serves as a **template for Business Intelligence graduation projects**. Students should **fork this repository** and use it as the foundation for their project work. All project-related files and documentation should be organized within this single repository.
-
-### For Students: Quick Start
-1. **Fork this repository** (Click on **Use this template** then **Create new repository** button in the top right corner) to fork your own copy.
-
-![use-this-template](images/use-template.png)
-
-2. **Clone your fork** to your local machine
-3. **Follow the sections below** to structure your project documentation in markdown format
-4. **Push your work** regularly to track progress
-
----
-
-## Project Structure
-
-```
-your-project-name/
-├── README.md                 # Project overview (UPDATE THIS)
-├── docs/                     # All project documentation
-│   └── 01_project_description.md
-├── data/
-│   ├── raw/                  # Original data files
-│   └── processed/            # Cleaned, transformed data
-├── notebooks/                # Jupyter notebooks for analysis
-├── src/                       # Source code (scripts, apps)
-├── dashboards/               # BI tool exports (Tableau, Power BI, etc.)
-├── models/                    # Trained ML/AI models
-├── requirements.txt          # Python dependencies
-└── .gitignore                # Git ignore file
-```
-
----
-
-## [Documentation Template Sections](docs/documentation.md)
-
-## [**Title Page & Authors**](docs/documentation.md#title-page-authors)
-```
-[Insert Title Here]
-
-Authors
-- [Student Name], [Student Number]
-- [Student Name], [Student Number]
-
-Supervised by: [Supervisor Name]
-
+Raneem Rawwas — 202111039
+Supervised by: Dr. Ayman Mansour
 Course: 307498 – Graduation Project
-Semester: First Semester, 2025/2026
-
-Date: [Submission Date]
-```
+Second Semester 2025/2026
+----------------------------------------------------------------------------------
 
 ## [Table of Content](docs.domcumentation.md#table-of-content) 
 
@@ -72,29 +25,69 @@ Date: [Submission Date]
 - ### [**Project Deployment Effort – Use Case**](docs/documentation.md#project-deployment-effort-use-case)
 - ### [**Results**](docs/documentation.md#results)
 - ### [**References**](docs/documentation.md#references)
+----------------------------------------------------------------------------------
 
 
+Abstract :
 
-## [**Abstract**](docs/documentation.md#abstract)
-A concise summary of your project (2-3 paragraphs):
-- 1 paragraph: Introduction and objectives
-- 1 paragraph: Implementation approach and methods
-- 1 paragraph: Key results and findings
 
-## [**Acknowledgment**](docs/documentation.md#acknowledgment)
-Acknowledge individuals and organizations that supported your project.
+Type 2 diabetes is one of the most prevalent chronic diseases worldwide, and early identification of at-risk individuals is critical for timely intervention and prevention. This project presents an interactive machine learning framework designed to predict the probability of Type 2 diabetes based on lifestyle and health indicators.
+The project utilized two data sources: the CDC BRFSS 2015 dataset (70,692 records, 50/50 balanced split, 21 features), and real laboratory data provided by Smart Lab Laboratories under a formal data agreement. Dietary recommendation data was sourced from NutriPlus Nutritional Center under the supervision of Dr. Islam JadAlla.
+Two models were developed. The first is a predictive model trained on the CDC dataset using Random Forest, XGBoost, CatBoost, ANN, and a Stacking Ensemble, with Bayesian hyperparameter optimization via Optuna. The second is a rule-based model derived from real laboratory data, used as the foundation for the user interface logic.
+The project includes three interactive Tableau dashboards and a bilingual Arabic-English Streamlit interface featuring an intelligent prediction section and a diabetes awareness guide. A clear disclaimer is displayed stating the tool is for awareness purposes only and does not replace medical diagnosis. The model's outputs were reviewed and validated by Dr. Ahmad Jadallah from the University of Petra. A formal validation document is included in the documentation section of this repository.
 
-## [**Business Intelligence Project Description and Objectives**](docs/documentation.md#business-intelligence-project-description-and-objectives)
-- What is your project about?
-- What industry or business domain does it address?
-- How will it help the industry/business?
-- What specific business problems are you solving?
+----------------------------------------------------------------------------------
+Acknowledgments :
 
-## [**Data Research and Acquiring Effort**](docs/documentation.md#data-research-and-acquiring-effort)
-- What data did you search for and why?
-- How did you acquire it? Sources, APIs, Scraping.
-- **Links to raw data sources** (URLs, datasets)
-- Brief description of each data source
+
+First and foremost, I would like to express my sincere gratitude to my supervisor, Dr. Ayman Mansour, for his continuous guidance, valuable feedback, and support throughout every stage of this project.
+I would also like to thank the faculty members of the Department of Business Intelligence and Data Analytics at the University of Petra for the knowledge and skills they provided throughout my academic journey.
+Special thanks to Smart Lab Laboratories, under the management of Dr. Abdallah Alhariri, and a particular acknowledgment to Engineer Firas Alhussein for his cooperation in providing access to the laboratory data. I also extend my gratitude to Dr. Ahmad Jadallah from the University of Petra who reviewed and validated the model's outputs.
+I am particularly grateful to Dr. Islam JadAlla and NutriPlus Nutritional Center for providing verified dietary recommendations, which formed the foundation of the user interface recommendations.
+I am also grateful to the CDC for making the BRFSS dataset publicly available.
+Finally, I would like to thank my family and friends for their patience, support, and encouragement throughout this journey.
+
+----------------------------------------------------------------------------------
+Business Intelligence Project Description and Objectives
+
+What is this project about?
+
+RiskSense is a bilingual interactive machine learning framework designed to predict the probability of Type 2 diabetes based on lifestyle and health indicators. The project was motivated by Jordan's position as one of the most affected countries in the MENA region, and by the silent nature of Type 2 diabetes — a disease that can progress for years without symptoms, making early detection critical. Many individuals remain undiagnosed until serious complications arise, and in some cases, the disease is only discovered after a life-threatening event.
+What industry or business domain does it address?
+Public health and healthcare analytics — specifically targeting early diabetes risk screening in Jordan and the broader MENA region.
+
+How will it help the industry/business?
+
+Explores the relationship between diabetes and lifestyle factors, demographic patterns, and health complications through three interactive Tableau dashboards
+Gives individuals free access to a personalized risk assessment tool without requiring clinical visits or laboratory tests
+Results include a risk probability alongside medically verified dietary recommendations tailored specifically to the Jordanian community
+Supports the medical sector by increasing public awareness about diabetes risk, which can reduce the long-term burden on healthcare systems
+Carries multi-level economic impact — from reducing individual healthcare costs through early prevention, to decreasing national expenditure on late-stage diabetes treatment and complications
+
+What specific business problems are you solving?
+
+Limited access to early diabetes screening in Jordan
+Most individuals remain unaware of their risk until complications develop
+Financial barriers — most screening requires paid clinical visits
+----------------------------------------------------------------------------------
+Data Research and Acquiring Effort
+What data did you search for and why?
+Two types of data were needed for this project. The first is a large-scale labeled dataset linking lifestyle and health indicators to diabetes status — needed to train the predictive machine learning model. The second is real clinical laboratory data from Jordanian patients — needed to ground the project in local medical reality and build the rule-based logic behind the user interface recommendations.
+How did you acquire it?
+
+CDC BRFSS Dataset — downloaded directly from Kaggle as a public CSV file. No API or scraping was needed.
+Smart Lab Laboratory Data — obtained under a formal Non-Disclosure Agreement (NDA) with Smart Lab Laboratories, Amman, Jordan. The data was provided as Excel and CSV files covering 11 laboratory tests across thousands of patients.
+
+Data Sources
+DatasetSourceAccessCDC BRFSS 2015 — Diabetes Health IndicatorsKagglePublicReal Laboratory Data — Smart Lab JordanSmart Lab Laboratories, AmmanNDA — formal agreement on file
+Brief Description of Each Data Source
+1. CDC BRFSS 2015 Dataset
+A large-scale public health survey conducted by the Centers for Disease Control and Prevention (CDC). The specific file used is diabetes_binary_5050split_health_indicators_BRFSS2015.csv — 70,692 records with a balanced 50/50 split between diabetic and non-diabetic cases across 21 lifestyle, behavioral, and demographic features.
+📄 View raw data file
+2. Smart Lab Laboratory Data
+Real clinical laboratory results from Jordanian patients collected during 2025, covering 11 lab tests including HbA1c (used as the diabetes target variable), CRP, Triglycerides, GGT, Creatinine, and others. Provided under a formal NDA — documentation available in the repository.
+📄 View NDA & documentation
+----------------------------------------------------------------------------------
 
 ## [**Data Description and Understanding**](docs/documentation.md#data-description-and-understanding)
 - **Data Dictionary**: Describe every field you're using and why it matters
@@ -104,6 +97,9 @@ Acknowledge individuals and organizations that supported your project.
   - Correlations and relationships found
   - Insights relevant to your project objectives
 
+  ----------------------------------------------------------------------------------
+
+
 ## [**Data Primary Cleaning and Transformation**](docs/documentation.md#data-primary-cleaning-and-transformation)
 Describe all data preparation steps in sequence:
 - Data type conversions
@@ -111,12 +107,14 @@ Describe all data preparation steps in sequence:
 - Merging datasets
 - Aggregation and appending
 - Any other transformations applied
+----------------------------------------------------------------------------------
 
 ## [**Data Visualization and Insights**](docs/documentation.md#data-visualization-and-insights)
 - Include relevant charts and describe each one
 - Explain the significance of each visualization
 - Highlight key insights from your charts
 - What patterns do these visualizations reveal?
+----------------------------------------------------------------------------------
 
 ## [**Dashboard Design & Business Insights**](docs/documentation.md#dashboard-design--business-insights)
 - Showcase your final BI Dashboard
@@ -137,6 +135,7 @@ Examples:
 
 - Chart 2: Customer Segmentation – Identifies high-value segments
 - Chart 3: Regional Performance – Highlights top/bottom performers
+----------------------------------------------------------------------------------
 
 ## [**Advanced Analytics and AI Modeling**](docs/documentation.md#advanced-analytics-and-ai-modeling)
 - What type of model did you build? (Clustering, Predictive, Association, Generative AI, forecasting, agents, etc.)
@@ -145,6 +144,10 @@ Examples:
 - **Model Characteristics**: Such as Accuracy, precision, recall, weights, parameters
 - Include multiple iterations if applicable
 - Explain your findings and model performance
+
+
+----------------------------------------------------------------------------------
+
 
 ## [**Tools Research and Selection Effort**](docs/documentation.md#tools-research-and-selection-effort)
 - What tools did you evaluate?
@@ -156,6 +159,7 @@ Examples:
 - Data Analysis: Python, R, SQL
 - Visualization: Tableau, Power BI, Looker
 - Deployment: Streamlit, Fast API, Gradio, Flask, Cloud platforms
+----------------------------------------------------------------------------------
 
 ## [**Project Deployment Effort – Use Case**](docs/documentation.md#project-deployment-effort-use-case)
 - How will a business user consume this project?
@@ -167,17 +171,20 @@ Examples:
 - Implementation steps in chronological order
 - If you built a prototype, describe deployment process
 - Infrastructure and hosting considerations
+----------------------------------------------------------------------------------
 
 ## [**Results**](docs/documentation.md#results)
 - Summary of findings (2-3 paragraphs)
 - Most important insights or charts in your opinion
 - Evaluation and interpretation of results
 - Business impact and recommendations
+----------------------------------------------------------------------------------
 
 ## [**References**](docs/documentation.md#references)
 List all sources cited in your project using a consistent citation format (APA, Chicago, etc.)
 
----
+
+----------------------------------------------------------------------------------
 
 ## Code setup and dependencies Instructions
 Write procedure for setup and running code.
@@ -199,7 +206,8 @@ for example:
    python app.py
    ```
 
----
+
+----------------------------------------------------------------------------------
 
 
 
@@ -221,6 +229,7 @@ for example:
 - Don't forget to document your data sources and methodology
 
 ---
+----------------------------------------------------------------------------------
 
 ## Flexibility by Project Type
 
