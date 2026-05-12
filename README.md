@@ -88,7 +88,7 @@ How did you acquire it?
 2. Smart Lab Laboratory Data
 Real clinical laboratory results from Jordanian patients collected during 2025, covering 11 lab tests including HbA1c (used as the diabetes target variable), CRP, Triglycerides, GGT, Creatinine, and others. Provided under a formal NDA — documentation available in the repository.
 
-📄 [View NDA](../docs/smart_lab_NDA.pdf)
+📄 [View NDA](smart_lab_NDA.jpg)
 ----------------------------------------------------------------------------------
 
 ## [**Data Description and Understanding**](docs/documentation.md#data-description-and-understanding)
